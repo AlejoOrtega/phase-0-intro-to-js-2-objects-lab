@@ -4,24 +4,24 @@ const employee ={
     streetAddress : "Main Street"
 }
 
-function updateEmployeeWithKeyAndValue(employee, key, value){
+const updateEmployeeWithKeyAndValue= (employee, key, value)=> {
     let updatedEmployee = {...employee}
     updatedEmployee[key] = value;
     return updatedEmployee;
 }
 
-function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
+const destructivelyUpdateEmployeeWithKeyAndValue = (employee, key, value)=>{
     employee[key] = value;
     return employee;
 }
 
-function deleteFromEmployeeByKey(employee, key){
+const deleteFromEmployeeByKey = (employee, key)=>{
     let updatedEmployee = {...employee};
     delete updatedEmployee[key];
     return updatedEmployee;
 }
 
-function destructivelyDeleteFromEmployeeByKey(employee, key){
+const destructivelyDeleteFromEmployeeByKey=(employee, key)=>{
     delete employee[key];
     return employee;
 }
